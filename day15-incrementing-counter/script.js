@@ -1,4 +1,7 @@
 const counters = document.querySelectorAll(".counter");
+const btn = document.querySelector(".btn");
+
+btn.style.visibility = 'hidden';
 
 counters.forEach(counter => {
     counter.innerText = "0";
@@ -17,10 +20,6 @@ counters.forEach(counter => {
         }else(
             counter.innerText = target
         )
-
-
     }
-
     updateCounter();
-
 })
