@@ -1,0 +1,77 @@
+.container{
+    height: 200px;
+    overflow: hidden;
+}
+
+p.rainbowText{
+    display: block;
+    animation-name: rainbowtext;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: reverse;
+
+}
+
+@keyframes rainbowtext{
+    0%{
+        color: red;
+        font-size:  20px;
+    }
+    25%{
+        color: orange;
+    }
+    50%{
+        color: yellow;
+        font-size: 40px;
+        transform: translateX(200px);
+    }
+    75%{
+        color:  green;
+    }
+}
+
+p.box{
+    height: 50px;
+    width: 50px;
+    padding: 10px;
+    margin: auto;
+    background-color: darkblue;
+    color: aqua;
+}
+
+h1{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    /* margin: 0; */
+    background-color: darkblue;
+    color: aqua;
+
+    animation-name: translateX;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+
+}
+
+h1:hover{    
+    animation-play-state: paused;
+}
+
+h1.reverse{
+    animation-direction: reverse;
+}
+
+h1.alternate{
+    animation-direction: alternate;
+}
+
+@keyframes translateX{
+    100%{
+        transform: translateX(200px);
+    }
+    
+}
