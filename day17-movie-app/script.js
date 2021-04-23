@@ -21,6 +21,7 @@ function showMovies(movies){
 
     movies.forEach( (movie) => {
         const { title, backdrop_path, vote_average, overview} = movie;
+        console.log( `title: ${title}, backdrop_path: ${backdrop_path}, vote_average: ${vote_average}, overview: ${overview}`)
         const movieEl = document.createElement('div');
         movieEl.classList.add('movie');
 
